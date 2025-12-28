@@ -57,15 +57,18 @@ Full path example: `C:\Users\YourName\AppData\Roaming\Propellerhead Software\Rem
 1. Open Reason
 2. Go to **Preferences → Control Surfaces**
 3. Click **Add** and select **Akai MPK mini IV**
-4. Set MIDI In/Out to "MPK mini IV MIDI Port"
+4. Configure the MIDI ports:
+   - **Input 1**: MPK mini IV DAW Port (transport controls)
+   - **Input 2**: MPK mini IV MIDI Port (keyboard, knobs, pads)
 
 ## Using Kong/Redrum Pad Mapping
 
 The default controller preset uses chromatic notes (48-74). For Kong/Redrum compatibility:
 
-1. On the MPK Mini IV, press **PROG SELECT**
-2. Tap **Pad 2** to select the "Reason" preset
-3. Pads now send notes 36-51, matching Kong/Redrum pads 1-16
+1. On the MPK Mini IV, hold **SHIFT** and press **USER PRESETS**
+2. Turn the knob to select **Prg2:Reason**
+3. Press the knob to confirm
+4. Pads now send notes 36-51, matching Kong/Redrum pads 1-16
 
 The Reason preset is automatically saved to slot 2 when Reason connects.
 
@@ -142,7 +145,6 @@ mk4/
 ├── docs/                   # Documentation
 │   ├── MPK_MINI_IV_MIDI_SPEC.md    # Complete MIDI protocol
 │   └── SESSION_NOTES.md
-├── openspec/               # Change management & specs
 ├── deploy.sh               # macOS installation script
 ├── deploy.bat              # Windows installation script
 └── README.md
@@ -213,7 +215,7 @@ The MPK Mini IV exposes multiple MIDI ports:
 
 - **Arpeggiator clock**: Cannot be set via SysEx; must be configured manually each session
 - **Preset 1 (DAW)**: Read-only; cannot be modified
-- **Preset selection**: User must manually select preset 2 on the controller
+- **Preset selection**: User must manually select Prg2:Reason on the controller (SHIFT + USER PRESETS)
 
 ## License
 
