@@ -12,6 +12,11 @@ Reason Studios Remote control surface integration for the AKAI MPK Mini IV MIDI 
 - **Bank +/- Patch Navigation**: Browse patches on focused instruments
 - **Serum 2 Macro Control**: Knobs 1-8 map to Serum 2 Macros 1-8
 
+## Please consider Donating if you find this useful
+I have a family, and every little bit helps. Aloha.
+
+Venmo: @philosurfer
+
 ## Installation
 
 ### macOS
