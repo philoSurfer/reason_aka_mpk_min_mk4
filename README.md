@@ -137,6 +137,8 @@ mk4/
 │   ├── generate_reason_preset.py
 │   ├── read_preset_clock.py    # Check arpeggiator settings
 │   └── poll_mk4.py             # Poll device for data
+├── device_data/            # Exported device remote info
+│   └── Serum 2 Remote Info.txt # VST scope reference
 ├── docs/                   # Documentation
 │   ├── MPK_MINI_IV_MIDI_SPEC.md    # Complete MIDI protocol
 │   └── SESSION_NOTES.md
